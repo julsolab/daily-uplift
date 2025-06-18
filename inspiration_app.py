@@ -131,7 +131,7 @@ if st.session_state.show_idea and st.session_state.current_idea:
 
 # Show feedback message if available
 if st.session_state.feedback == "liked":
-    st.success("Great! Psst... I saved it to ideas.txt - just in case ;)")
+    st.success("Great! I'm happy! ;)")
 elif st.session_state.feedback == "disliked":
     st.warning("No worries! Try another idea.")
 
