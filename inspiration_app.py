@@ -15,7 +15,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 st.set_page_config(page_title="Daily Uplift", page_icon="🌈")
 
 st.title("🌞 Daily Uplift")
-st.subheader("Let me create a cheerful idea just for you")
+st.subheader("Let me, with a little help from AI, brighten your day")
 
 # Initialize session state for current idea
 if 'current_idea' not in st.session_state:
@@ -51,7 +51,7 @@ prompt_templates = [
 
 # User input
 weather = st.text_input("1. How's the weather right now?")
-places = st.text_input("2. Where are you? (City? Countryside? Work? Home?)")
+places = st.text_input("2. Where are you? (At work or at home, in the city or countryside?)")
 mood = st.text_input("3. How are you feeling emotionally?")
 worry = st.text_input("4. Is anything bothering you today?")
 
@@ -113,13 +113,13 @@ if st.session_state.show_idea and st.session_state.current_idea:
 
     def give_feedback(rating):
         st.session_state.feedback = rating
-        # No hiding of the idea - we keep it visible
-        if rating == "liked":
-            try:
-                with open("ideas.txt", "a", encoding="utf-8") as f:
-                    f.write(st.session_state.current_idea + "\n---\n")
-            except Exception as e:
-                st.error(f"Couldn't save your idea: {e}")
+        # Saving ideas
+        # if rating == "liked":
+        #     try:
+        #         with open("ideas.txt", "a", encoding="utf-8") as f:
+        #             f.write(st.session_state.current_idea + "\n---\n")
+        #     except Exception as e:
+        #         st.error(f"Couldn't save your idea: {e}")
 
     with col1:
         if st.button("👍 I liked it"):
@@ -130,9 +130,12 @@ if st.session_state.show_idea and st.session_state.current_idea:
             give_feedback("disliked")
 
 # Show feedback message if available
-if st.session_state.feedback == "liked":
-    st.success("Great! I'm happy! ;)")
-elif st.session_state.feedback == "disliked":
+feedback = st.session_state.get("feedback", None)
+
+if feedback == "liked":
+    st.success("I'm really happy to hear that! :)")
+elif feedback == "disliked":
     st.warning("No worries! Try another idea.")
+
 
 # to start run in terminal: streamlit run inspiration_app.py
