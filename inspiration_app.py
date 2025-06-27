@@ -15,7 +15,6 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 st.set_page_config(page_title="Daily Uplift", page_icon="🌈")
 
 
-
 st.title("🌞 Daily Uplift")
 st.subheader("Let me, with a little help from AI, brighten your day")
 
