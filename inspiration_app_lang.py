@@ -20,9 +20,9 @@ LANGUAGES = {
         'title': '🌞 Daily Uplift',
         'subtitle': 'Let me, with a little help from AI, brighten your day',
         'questions': [
-            "How's the weather right now? 🌤️",
+            "How's the weather right now?",
             "Where are you? (At work or at home, in the city or countryside?)",
-            "How are you feeling emotionally? 💭",
+            "How are you feeling emotionally?",
             "Is anything bothering you today?"
         ],
         'button': 'Get My Inspiring Idea 🏄‍♂️',
@@ -49,9 +49,9 @@ LANGUAGES = {
         'title': '🌞 Ежедневное вдохновение',
         'subtitle': 'Позвольте нам с ИИ поднять вам настроение',
         'questions': [
-            "Какая сейчас погода? 🌤️",
+            "Какая сейчас погода?",
             "Где вы сейчас (на работе, дома, в городе, на даче...)?",
-            "Как настроение? 💭",
+            "Как настроение?",
             "Что-то беспокоит вас?"
         ],
         'button': 'Вдохновиться 🏄‍♂️',
@@ -78,9 +78,9 @@ LANGUAGES = {
         'title': '🌞 Tägliche Inspiration',
         'subtitle': 'Lass mich, mit ein wenig Hilfe von KI, deinen Tag erhellen',
         'questions': [
-            "Wie ist das Wetter gerade? 🌤️",
+            "Wie ist das Wetter gerade?",
             "Wo bist du? (Bei der Arbeit oder zu Hause, in der Stadt oder auf dem Land?)",
-            "Wie fühlst du dich emotional? 💭",
+            "Wie fühlst du dich emotional?",
             "Beschäftigt dich heute etwas?"
         ],
         'button': 'Meine inspirierende Idee bekommen 🏄‍♂️',
@@ -107,9 +107,9 @@ LANGUAGES = {
         'title': '🌞 Inspiration quotidienne',
         'subtitle': 'Laissez-moi, avec un peu d\'aide de l\'IA, égayer votre journée',
         'questions': [
-            "Quel temps fait-il maintenant? 🌤️",
+            "Quel temps fait-il maintenant?",
             "Où êtes-vous? (Au travail ou à la maison, en ville ou à la campagne?)",
-            "Comment vous sentez-vous émotionnellement? 💭",
+            "Comment vous sentez-vous émotionnellement?",
             "Quelque chose vous préoccupe-t-il aujourd'hui?"
         ],
         'button': 'Obtenir mon idée inspirante 🏄‍♂️',
@@ -136,9 +136,9 @@ LANGUAGES = {
         'title': '🌞 Päivittäinen inspiraatio',
         'subtitle': 'Anna minun, tekoälyn avulla, piristää päivääsi',
         'questions': [
-            "Millainen sää on nyt? 🌤️",
+            "Millainen sää on nyt?",
             "Missä olet? (Töissä vai kotona, kaupungissa vai maaseudulla?)",
-            "Miten voit henkisesti? 💭",
+            "Miten voit henkisesti?",
             "Onko jokin asia huolestuttamassa sinua tänään?"
         ],
         'button': 'Saa inspiroiva ideani 🏄‍♂️',
