@@ -14,6 +14,8 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # Streamlit page settings
 st.set_page_config(page_title="Daily Uplift", page_icon="🌈")
 
+
+
 st.title("🌞 Daily Uplift")
 st.subheader("Let me, with a little help from AI, brighten your day")
 
@@ -137,5 +139,10 @@ if feedback == "liked":
 elif feedback == "disliked":
     st.warning("No worries! Try another idea.")
 
+st.markdown("""
+<div style="margin-top: 2em;text-align:right;">
+<a href="https://day-up-lang.streamlit.app" target="_blank">Try the New Multilingual Version</a>
+</div>
+""", unsafe_allow_html=True)
 
 # to start run in terminal: streamlit run inspiration_app.py
