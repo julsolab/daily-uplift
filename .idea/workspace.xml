@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a276748-5da1-488d-bfcd-c650c67f7275" name="Changes" comment="First version">
-      <change beforePath="$PROJECT_DIR$/inspiration_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/inspiration_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inspiration_app_lang.py" beforeDir="false" afterPath="$PROJECT_DIR$/inspiration_app_lang.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
