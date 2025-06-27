@@ -76,7 +76,7 @@ LANGUAGES = {
         'flag': '🇩🇪',
         'ai_name': 'German',
         'title': '🌞 Tägliche Inspiration',
-        'subtitle': 'Lass mich, mit ein wenig Hilfe von KI, deinen Tag erhellen',
+        'subtitle': 'Mit ein bisschen Unterstützung von KI lass mich deinen Tag verschönern!',
         'questions': [
             "Wie ist das Wetter gerade?",
             "Wo bist du? (Bei der Arbeit oder zu Hause, in der Stadt oder auf dem Land?)",
