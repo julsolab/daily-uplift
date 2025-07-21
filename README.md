@@ -1,115 +1,100 @@
 
-# Daily Uplift App
+DAILY UPLIFT APP
+================
 
-## Project Overview
+Overview
+--------
+Daily Uplift is an interactive app that delivers personalized, emotionally intelligent ideas to uplift your mood. Using OpenAI's GPT-3.5 model and built with Streamlit, the app helps you reflect on your emotions, environment, and thoughts—and responds with short, imaginative suggestions to brighten your day.
 
-**Daily Uplift** is an interactive app designed to offer personalized uplifting and motivating ideas based on your mood, environment, and worries. Powered by OpenAI’s GPT-3.5 model, this tool generates short, inspiring actions or ideas that help you feel better and more positive.
+Two Versions Available
+----------------------
+1. **English Version**:
+   - A straightforward interface with all interactions in English.
+   - Best for quick use or initial setup.
 
-## Features
+2. **Multilingual Version**:
+   - Offers full support for English 🇺🇸, Russian 🇷🇺, German 🇩🇪, French 🇫🇷, and Finnish 🇫🇮.
+   - Includes localized interface, prompts, and AI-generated responses.
+   - Dynamic language selection and culturally adapted messages.
 
-- **Personalized Inspiration**: Enter your mood, environment, and worries, and get a tailored uplifting idea.
-- **Interactive UI**: A simple, friendly interface built with Streamlit to make it easy to engage with.
-- **Flexible**: You can use it daily or whenever you need an inspiring boost.
-- **Easy Setup**: Set up quickly and run locally on your machine.
+Features
+--------
+- Personalized ideas based on weather, location, mood, and current worries
+- Optimized prompt generation tailored to the time of day
+- Feedback mechanism (Like/Dislike) with contextual response
+- Streamlit-powered web UI
+- Quick setup and smooth local execution
 
-## Prerequisites
+Prerequisites
+-------------
+- Python 3.7 or higher
+- Streamlit
+- OpenAI API Key
 
-Before running the app locally, make sure you have the following:
+Setup Instructions
+------------------
 
-- **Python 3.7 or higher**
-- **Streamlit**
-- **OpenAI API Key**
+1. Clone the repository:
+    git clone https://github.com/yourusername/daily-uplift.git
+    cd daily-uplift
 
-## Setup Instructions
+2. Create and activate a virtual environment:
+    - Windows:
+        python -m venv .venv
+        .\.venv\Scripts\activate
+    - macOS/Linux:
+        python3 -m venv .venv
+        source .venv/bin/activate
 
-### 1. Clone the repository
+3. Install dependencies:
+    pip install -r requirements.txt
 
-To clone the repository to your machine, use the following commands:
-```bash
-git clone https://github.com/yourusername/daily-uplift.git
-cd daily-uplift
-```
+4. Set your OpenAI API key:
+    - Windows:
+        set OPENAI_API_KEY=your_api_key_here
+    - macOS/Linux:
+        export OPENAI_API_KEY=your_api_key_here
 
-### 2. Set up a virtual environment
+    Optional: Create a .env file with:
+        OPENAI_API_KEY=your_api_key_here
 
-Use a virtual environment to manage dependencies:
-- **For Windows**:
-  ```bash
-  python -m venv .venv
-  .\.venv\Scripts ctivate
-  ```
-- **For macOS/Linux**:
-  ```bash
-  python3 -m venv .venv
-  source .venv/bin/activate
-  ```
+5. Run the app:
+    - For English version:
+        streamlit run inspiration_app.py
+    - For Multilingual version:
+        streamlit run inspiration_app_lang.py
 
-### 3. Install dependencies
+Usage
+-----
+1. Choose version based on your preference (English or multilingual).
+2. Answer four quick questions about your situation.
+3. Receive a customized idea to lift your spirits.
+4. Optionally give feedback on the suggestion.
 
-Once the environment is set up, install the required libraries using:
-```bash
-pip install -r requirements.txt
-```
+Languages (Multilingual Version)
+--------------------------------
+- English 🇺🇸
+- Russian 🇷🇺
+- German 🇩🇪
+- French 🇫🇷
+- Finnish 🇫🇮
 
-### 4. Set up OpenAI API key
+Contributing
+------------
+We welcome community contributions. Fork the repository, implement your feature or fix, and submit a pull request.
 
-You need to obtain an OpenAI API key from [OpenAI's website](https://beta.openai.com/signup/). After obtaining your API key:
+License
+-------
+MIT License
 
-- **For Windows**:
-  ```bash
-  set OPENAI_API_KEY=your_api_key_here
-  ```
+Acknowledgements
+----------------
+- OpenAI for GPT-3.5
+- Streamlit for the application framework
+- Everyone who contributed or tested
 
-- **For macOS/Linux**:
-  ```bash
-  export OPENAI_API_KEY=your_api_key_here
-  ```
+Contact
+-------
+For questions or feedback, open an issue or email: juls.petersburg@gmail.com
 
-Alternatively, you can add it to a `.env` file in the root of your project:
-```
-OPENAI_API_KEY=your_api_key_here
-```
-
-If using `.env` files, you’ll need the `python-dotenv` package:
-```bash
-pip install python-dotenv
-```
-
-### 5. Run the app
-
-Now that everything is set up, run the app using:
-```bash
-streamlit run inspiration_app.py
-```
-
-This will launch the app in your default browser.
-
-## How to Use
-
-1. **Answer the prompts**: You’ll be asked to provide the following inputs:
-   - **Weather**: How’s the weather right now?
-   - **Location**: Where are you? (City, country side, etc.)
-   - **Mood**: How are you feeling emotionally today?
-   - **Worries**: Is there anything bothering you today?
-
-2. **Get your idea**: After clicking the "✨ Get My Inspiring Idea" button, the app will generate a personalized idea to uplift your mood.
-
-## Contributing
-
-Contributions are welcome! If you have any improvements, bug fixes, or new features, feel free to fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License
-
-## Acknowledgements
-
-- **OpenAI**: For providing the GPT-3.5 API that powers the idea generation.
-- **Streamlit**: For creating an easy-to-use framework to build interactive apps.
-- **All Contributors**: For helping make this project better!
-
-## Contact Information
-
-For any questions or feedback, please feel free to open an issue in the repository, or contact me via juls.petersburg@gmail.com.
-
-## Enjoy Your Daily Uplift! 🌞✨
+Enjoy Your Daily Uplift! 🌞✨
